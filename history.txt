@@ -1,0 +1,76 @@
+    1  sudo apt-get update
+    2  sudo apt-get install git
+    3  git --version
+    4  git config --global user.name "s"
+    5  git config --global user.email "sameer96.aws@gmail.com"
+    6  git config --list
+    7  git config --global color.ui true
+    8  git config --global color.status auto
+    9  git config --global color.branch auto
+   10  git config --global core.editor vim
+   11  git config --global merge.tool kdiff3
+   12  git config --list
+   13  git config  --global --list
+   14  ls
+   15  id
+   16  mkdir ~/Repo1
+   17  cd Repo1/
+   18  ls
+   19  mkdir git.docs
+   20  git init
+   21  ls -lrt
+   22  ls -al
+   23  touch git.docs/simple.txt
+   24  cd git.docs/
+   25  echo ls
+   26  cd ..
+   27  ls
+   28  tree -a
+   29  apt-get install tree
+   30  tree -a
+   31  ls -lrt
+   32  echo "file1" > file1
+   33  echo "file2" > file2
+   34  echo "file3" > file3
+   35  tree -a
+   36  git status
+   37  git add .
+   38  tree -a
+   39  git commit -m "first commit"
+   40  git status
+   41  git log
+   42  touch rm_this_file
+   43  git add .
+   44  git commit -m "to be removed file added"
+   45  git status
+   46  git rm rm_this_file 
+   47  git commit -m "file removed before git push"
+   48  git status
+   49  echo "README" >> README
+   50  echo "test.rb" >> test.rb
+   51  echo "LICENSE" >> LICENSE
+   52  LS
+   53  ls
+   54  git add README test.rb LICENSE 
+   55  git status
+   56  git commit -m "initial commit"
+   57  git branch testing
+   58  git checkout testing
+   59  git checkout master
+   60  git checkout testing
+   61  vim test.rb 
+   62  git commit -a -m "made a change"
+   63  git checkout master
+   64  vim test.rb 
+   65  git commit -a -m "made some more changes"
+   66  git push
+   67  git push https://github.com/practicechef/learn-vagrant.git
+   68  git status
+   69  git remote add origin https://github.com/awsdghost/gitpro.git
+   70  git push -u origin master
+   71  git checkout testing
+   72  git remote add origin https://github.com/awsdghost/gitpro.git
+   73  git push -u origin testing
+   74  history
+   75  ls
+   76  history > history.txt
